@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Dalfour Cream - Best Cream in Dubai</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="assets/logo.webp" alt="ST. DALFOUR" style="height: 40px;">
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="verify.html" data-i18n="nav.verify">Verify Products</a></li>
+                            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">ST. DALFOUR CREAM</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;" data-i18n="hero.subtitle">Best Cream in Dubai | Top Skin Care Products UAE</p>
+                <p data-i18n="hero.description">Original Whitening Cream with guaranteed results</p>
+                <div class="hero-buttons">
+                    <a href="verify.html" class="btn btn-primary" data-i18n="hero.verify">VERIFY PRODUCT</a>
+                    <!-- <a href="#" onclick="startQRScan()" class="btn btn-secondary" data-i18n="hero.scan">📷 SCAN QR CODE</a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-i18n="featured.title">Featured Skin Care Products</h2>
+                    <p data-i18n="featured.subtitle">Discover our collection of the best skin care and original whitening creams in UAE</p>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-category" onclick="window.location.href='products.html?category=face-care'">
+                        <img src="assets/face-care.webp" alt="Face Care">
+                        <div class="category-overlay">
+                            <div class="category-name">Face Care</div>
+                        </div>
+                    </div>
+                    <div class="product-category" onclick="window.location.href='products.html?category=face-and-body-care'">
+                        <img src="assets/face-and-body-care.webp" alt="Face & Body Care">
+                        <div class="category-overlay">
+                            <div class="category-name">Face & Body Care</div>
+                        </div>
+                    </div>
+                    <div class="product-category" onclick="window.location.href='products.html?category=sun-care'">
+                        <img src="assets/sun-care.webp" alt="Sun Care">
+                        <div class="category-overlay">
+                            <div class="category-name">Sun Care</div>
+                        </div>
+                    </div>
+                    <div class="product-category" onclick="window.location.href='products.html?category=under-arm-care'">
+                        <img src="assets/under-arm-care.webp" alt="Under Arm Care">
+                        <div class="category-overlay">
+                            <div class="category-name">Under Arm Care</div>
+                        </div>
+                    </div>
+                    <div class="product-category" onclick="window.location.href='products.html?category=instant-white'">
+                        <img src="assets/instant-white.webp" alt="Instant White">
+                        <div class="category-overlay">
+                            <div class="category-name">Instant White</div>
+                        </div>
+                    </div>
+                    <div class="product-category" onclick="window.location.href='products.html?category=body-care'">
+                        <img src="assets/body-care.webp" alt="Body Care">
+                        <div class="category-overlay">
+                            <div class="category-name">Body Care</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="products.html" class="btn btn-primary" data-i18n="featured.viewAll">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-i18n="why.title">Why We Are The Best in Dubai?</h2>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <h3 data-i18n="why.original.title">Guaranteed Original Products</h3>
+                        <p data-i18n="why.original.desc">All our products are 100% original with secure verification system</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⭐</div>
+                        <h3 data-i18n="why.best.title">Best Whitening Cream</h3>
+                        <p data-i18n="why.best.desc">Most effective whitening creams with fast and guaranteed results</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🚚</div>
+                        <h3 data-i18n="why.delivery.title">Fast Delivery in UAE</h3>
+                        <p data-i18n="why.delivery.desc">Free and fast delivery across United Arab Emirates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                        <li><a href="verify.html" data-i18n="nav.verify">Verify</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
+                    <ul>
+                        <li data-i18n="footer.email">Email: info@stdalfourcream.com</li>
+                        <li data-i18n="footer.sales">Sales: sales@stdalfourcream.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 St. Dalfour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/qr-scanner@1.4.2/qr-scanner.umd.min.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

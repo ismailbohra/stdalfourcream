@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Products - St. Dalfour Cream - Authentic Product Verification</title>
+    <meta name="description" content="Verify the authenticity of your St. Dalfour cream products. Enter product code or scan QR code to ensure you have genuine products.">
+    <meta name="keywords" content="verify St. Dalfour, authentic products, product verification, QR code scan, genuine cream">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Verify Page -->
+    <div id="verify" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/logo.webp" alt="ST. DALFOUR" style="height: 40px;">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="verify.html" data-i18n="nav.verify">Verify Products</a></li>
+                            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" data-i18n="breadcrumb.home">Home</a>
+                        <span class="breadcrumb-separator">></span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span data-i18n="breadcrumb.verify">Verify</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+                <div class="verify-container">
+                    <div class="verify-form">
+                        <h2 data-i18n="verify.title">Verify Product</h2>
+                        <p data-i18n="verify.subtitle">Enter the unique product code found on the item.</p>
+                        
+                        <div class="form-group">
+                            <input type="text" id="productCode" data-i18n-placeholder="verify.placeholder" placeholder="Unique Code *" required>
+                        </div>
+                        
+                        <div class="verify-buttons">
+                            <button class="btn btn-primary" onclick="verifyProduct()" data-i18n="verify.button">VERIFY</button>
+                            <!-- <button class="btn btn-secondary" onclick="startQRScan()" data-i18n="verify.scan">📷 SCAN QR CODE</button> -->
+                        </div>
+                        
+                        <div id="verificationResult" class="result-message"></div>
+                    </div>
+                    
+                    <div class="sample-image">
+                        <div style="background: #e3f2fd; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <img src="assets/guide.png" alt="QR Code Guide" style="width: 100%; height: auto; border-radius: 5px;">
+                        </div>
+                        
+                        <div class="warning-box">
+                            <h4 data-i18n="verify.warning.title">⚠️ Warning: Beware of Fraud</h4>
+                            <p data-i18n="verify.warning.text">This is the only official website for St. Dalfour Cream. Beware of fraudulent websites including www.stdalfourwhiteningcream.com and www.stdalfourofficial.com. We are not responsible for purchases made from unauthorized sources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                        <li><a href="verify.html" data-i18n="nav.verify">Verify</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
+                    <ul>
+                        <li data-i18n="footer.email">Email: info@stdalfourcream.com</li>
+                        <li data-i18n="footer.sales">Sales: sales@stdalfourcream.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 St. Dalfour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/qr-scanner@1.4.2/qr-scanner.umd.min.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/verify.js"></script>
+</body>
+</html>

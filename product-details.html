@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - St. Dalfour Cream</title>
+    <meta name="description" content="Detailed information about St. Dalfour skin care products. Learn about ingredients, usage, and benefits of our whitening creams.">
+    <meta name="keywords" content="St. Dalfour product details, whitening cream ingredients, skin care benefits, product information">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Product Details Page -->
+    <div id="product-details" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/logo.webp" alt="ST. DALFOUR" style="height: 40px;">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="verify.html" data-i18n="nav.verify">Verify Products</a></li>
+                            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" data-i18n="breadcrumb.home">Home</a>
+                        <span class="breadcrumb-separator">></span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="products.html" data-i18n="breadcrumb.products">Products</a>
+                        <span class="breadcrumb-separator">></span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span data-i18n="breadcrumb.productDetails">Product Details</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+                <div id="product-content">
+                    <!-- Product details will be loaded dynamically -->
+                    <div style="text-align: center; padding: 60px 0;">
+                        <p data-i18n="common.loading">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                        <li><a href="verify.html" data-i18n="nav.verify">Verify</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
+                    <ul>
+                        <li data-i18n="footer.email">Email: info@stdalfourcream.com</li>
+                        <li data-i18n="footer.sales">Sales: sales@stdalfourcream.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 St. Dalfour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+{
+  "categories": [
+    {
+      "id": "face-care",
+      "name": "Face Care",
+      "nameAr": "العناية بالوجه",
+      "image": "assets/face-care.webp",
+      "description": "Premium face care products for radiant and healthy skin",
+      "descriptionAr": "منتجات العناية بالوجه المتميزة للحصول على بشرة مشرقة وصحية"
+    },
+    {
+      "id": "body-care",
+      "name": "Body Care",
+      "nameAr": "العناية بالجسم",
+      "image": "assets/body-care.webp",
+      "description": "Complete body care solutions for smooth and beautiful skin",
+      "descriptionAr": "حلول العناية الكاملة بالجسم للحصول على بشرة ناعمة وجميلة"
+    },
+    {
+      "id": "face-and-body-care",
+      "name": "Face & Body Care",
+      "nameAr": "العناية بالوجه والجسم",
+      "image": "assets/face-and-body-care.webp",
+      "description": "Comprehensive care for both face and body",
+      "descriptionAr": "العناية الشاملة للوجه والجسم معاً"
+    },
+    {
+      "id": "sun-care",
+      "name": "Sun Care",
+      "nameAr": "الحماية من الشمس",
+      "image": "assets/sun-care.webp",
+      "description": "Protection and care for sun-exposed skin",
+      "descriptionAr": "الحماية والعناية للبشرة المعرضة للشمس"
+    },
+    {
+      "id": "under-arm-care",
+      "name": "Under Arm Care",
+      "nameAr": "العناية بتحت الإبط",
+      "image": "assets/under-arm-care.webp",
+      "description": "Specialized care for underarm whitening and protection",
+      "descriptionAr": "العناية المتخصصة لتبييض وحماية منطقة تحت الإبط"
+    },
+    {
+      "id": "instant-white",
+      "name": "Instant White",
+      "nameAr": "التبييض الفوري",
+      "image": "assets/instant-white.webp",
+      "description": "Fast-acting whitening solutions for immediate results",
+      "descriptionAr": "حلول التبييض سريعة المفعول للحصول على نتائج فورية"
+    }
+  ],
+  "products": [
+    {
+      "id": "filipina-beauty-night-cream",
+      "name": "ST. DALFOUR FILIPINA BEAUTY NIGHT CREAM",
+      "nameAr": "كريم الليل للجمال الفلبيني من سانت دالفور",
+      "description": "Premium night cream for intensive skin repair and whitening while you sleep. Formulated with natural ingredients for gentle yet effective results.",
+      "descriptionAr": "كريم ليلي متميز لإصلاح البشرة المكثف والتبييض أثناء النوم. مُركب بمكونات طبيعية للحصول على نتائج لطيفة وفعالة.",
+      "image": "assets/1.jpeg",
+      "categories": ["face-care", "instant-white"],
+      "features": [
+        "Intensive overnight repair",
+        "Natural whitening ingredients",
+        "Suitable for all skin types",
+        "Dermatologically tested"
+      ],
+      "featuresAr": [
+        "إصلاح مكثف طوال الليل",
+        "مكونات تبييض طبيعية",
+        "مناسب لجميع أنواع البشرة",
+        "مختبر من قبل أطباء الجلدية"
+      ],
+      "ingredients": "Aqua, Glycerin, Kojic Acid, Arbutin, Vitamin E, Natural Extracts",
+      "usage": "Apply evenly on clean face before bedtime. Use daily for best results.",
+      "usageAr": "يُطبق بالتساوي على الوجه النظيف قبل النوم. يُستخدم يومياً للحصول على أفضل النتائج."
+    },
+    {
+      "id": "orange-vitamin-c-e-cream",
+      "name": "ST. DALFOUR ORANGE VITAMIN C & E SKIN WHITENING CREAM",
+      "nameAr": "كريم تبييض البشرة بفيتامين سي وإي البرتقالي من سانت دالفور",
+      "description": "Enriched with Vitamin C and E for powerful antioxidant protection and skin brightening. Orange extract provides natural glow.",
+      "descriptionAr": "مُعزز بفيتامين سي وإي للحماية القوية من مضادات الأكسدة وإشراق البشرة. مستخلص البرتقال يوفر إشراقاً طبيعياً.",
+      "image": "assets/2.jpeg",
+      "categories": ["face-care", "body-care", "face-and-body-care"],
+      "features": [
+        "Rich in Vitamin C & E",
+        "Antioxidant protection",
+        "Natural orange extract",
+        "Brightening formula"
+      ],
+      "featuresAr": [
+        "غني بفيتامين سي وإي",
+        "حماية من مضادات الأكسدة",
+        "مستخلص البرتقال الطبيعي",
+        "تركيبة مُشرقة"
+      ],
+      "ingredients": "Orange Extract, Vitamin C, Vitamin E, Kojic Acid, Glycerin",
+      "usage": "Apply twice daily on clean skin. Massage gently until absorbed.",
+      "usageAr": "يُطبق مرتين يومياً على البشرة النظيفة. يُدلك بلطف حتى الامتصاص."
+    },
+    {
+      "id": "glutathione-whitening-cream",
+      "name": "ST. DALFOUR GLUTATHIONE WHITENING CREAM",
+      "nameAr": "كريم التبييض بالجلوتاثيون من سانت دالفور",
+      "description": "Advanced glutathione formula for superior skin whitening and anti-aging benefits. Reduces dark spots and evens skin tone.",
+      "descriptionAr": "تركيبة الجلوتاثيون المتقدمة لتبييض البشرة الفائق وفوائد مكافحة الشيخوخة. يقلل البقع الداكنة ويوحد لون البشرة.",
+      "image": "assets/3.jpeg",
+      "categories": ["face-care", "instant-white"],
+      "features": [
+        "Advanced glutathione formula",
+        "Anti-aging properties",
+        "Reduces dark spots",
+        "Even skin tone"
+      ],
+      "featuresAr": [
+        "تركيبة الجلوتاثيون المتقدمة",
+        "خصائص مكافحة الشيخوخة",
+        "يقلل البقع الداكنة",
+        "يوحد لون البشرة"
+      ],
+      "ingredients": "Glutathione, Kojic Acid, Arbutin, Vitamin C, Hyaluronic Acid",
+      "usage": "Apply morning and evening after cleansing. Use sunscreen during day.",
+      "usageAr": "يُطبق صباحاً ومساءً بعد التنظيف. استخدم واقي الشمس أثناء النهار."
+    },
+    {
+      "id": "protection-cream",
+      "name": "ST. DALFOUR PROTECTION CREAM",
+      "nameAr": "كريم الحماية من سانت دالفور",
+      "description": "Multi-purpose protection cream with SPF for daily use. Shields skin from environmental damage while providing moisture.",
+      "descriptionAr": "كريم حماية متعدد الأغراض مع عامل حماية من الشمس للاستخدام اليومي. يحمي البشرة من الأضرار البيئية مع توفير الترطيب.",
+      "image": "assets/4.jpeg",
+      "categories": ["sun-care", "face-care"],
+      "features": [
+        "SPF protection",
+        "Environmental shield",
+        "Daily moisturizer",
+        "Non-greasy formula"
+      ],
+      "featuresAr": [
+        "حماية من عامل الحماية من الشمس",
+        "درع بيئي",
+        "مرطب يومي",
+        "تركيبة غير دهنية"
+      ],
+      "ingredients": "Zinc Oxide, Titanium Dioxide, Aloe Vera, Vitamin E, Glycerin",
+      "usage": "Apply generously 15 minutes before sun exposure. Reapply every 2 hours.",
+      "usageAr": "يُطبق بسخاء قبل 15 دقيقة من التعرض للشمس. يُعاد التطبيق كل ساعتين."
+    },
+    {
+      "id": "radiance-cream",
+      "name": "ST. DALFOUR RADIANCE CREAM",
+      "nameAr": "كريم الإشراق من سانت دالفور",
+      "description": "Illuminating cream that enhances natural skin radiance. Perfect for achieving a healthy, glowing complexion.",
+      "descriptionAr": "كريم مُضيء يعزز إشراق البشرة الطبيعي. مثالي للحصول على بشرة صحية ومتوهجة.",
+      "image": "assets/5.jpeg",
+      "categories": ["face-care", "instant-white"],
+      "features": [
+        "Illuminating formula",
+        "Natural radiance boost",
+        "Healthy glow",
+        "Lightweight texture"
+      ],
+      "featuresAr": [
+        "تركيبة مُضيئة",
+        "تعزيز الإشراق الطبيعي",
+        "توهج صحي",
+        "ملمس خفيف"
+      ],
+      "ingredients": "Pearl Extract, Vitamin C, Niacinamide, Hyaluronic Acid, Glycerin",
+      "usage": "Apply to clean face and neck. Use morning and evening for radiant skin.",
+      "usageAr": "يُطبق على الوجه والرقبة النظيفين. يُستخدم صباحاً ومساءً للحصول على بشرة مشرقة."
+    },
+    {
+      "id": "whitening-cream",
+      "name": "ST. DALFOUR WHITENING CREAM",
+      "nameAr": "كريم التبييض من سانت دالفور",
+      "description": "Classic whitening cream with proven results. Gentle yet effective formula suitable for daily use on face and body.",
+      "descriptionAr": "كريم التبييض الكلاسيكي بنتائج مُثبتة. تركيبة لطيفة وفعالة مناسبة للاستخدام اليومي على الوجه والجسم.",
+      "image": "assets/6.jpeg",
+      "categories": ["face-care", "body-care", "face-and-body-care"],
+      "features": [
+        "Proven whitening results",
+        "Gentle daily formula",
+        "Face and body use",
+        "Classic formulation"
+      ],
+      "featuresAr": [
+        "نتائج تبييض مُثبتة",
+        "تركيبة يومية لطيفة",
+        "للاستخدام على الوجه والجسم",
+        "تركيبة كلاسيكية"
+      ],
+      "ingredients": "Kojic Acid, Arbutin, Glycerin, Vitamin E, Natural Extracts",
+      "usage": "Apply evenly on clean skin twice daily. Avoid eye area.",
+      "usageAr": "يُطبق بالتساوي على البشرة النظيفة مرتين يومياً. تجنب منطقة العينين."
+    },
+    {
+      "id": "premium-cream",
+      "name": "ST. DALFOUR PREMIUM CREAM",
+      "nameAr": "الكريم المتميز من سانت دالفور",
+      "description": "Luxury premium cream with advanced anti-aging and whitening properties. The ultimate in skin care excellence.",
+      "descriptionAr": "كريم متميز فاخر بخصائص متقدمة لمكافحة الشيخوخة والتبييض. الأفضل في تميز العناية بالبشرة.",
+      "image": "assets/7.jpeg",
+      "categories": ["face-care", "instant-white"],
+      "features": [
+        "Luxury premium formula",
+        "Advanced anti-aging",
+        "Superior whitening",
+        "Skin care excellence"
+      ],
+      "featuresAr": [
+        "تركيبة متميزة فاخرة",
+        "مكافحة شيخوخة متقدمة",
+        "تبييض فائق",
+        "تميز العناية بالبشرة"
+      ],
+      "ingredients": "Platinum Peptides, Glutathione, Kojic Acid, Retinol, Hyaluronic Acid",
+      "usage": "Apply small amount to clean face. Use evening only. Start with 2-3 times per week.",
+      "usageAr": "يُطبق كمية صغيرة على الوجه النظيف. يُستخدم مساءً فقط. ابدأ بـ 2-3 مرات في الأسبوع."
+    },
+    {
+      "id": "underarm-whitening-cream",
+      "name": "ST. DALFOUR UNDERARM WHITENING CREAM",
+      "nameAr": "كريم تبييض تحت الإبط من سانت دالفور",
+      "description": "Specialized cream for underarm whitening and deodorizing. Gentle formula safe for sensitive underarm skin.",
+      "descriptionAr": "كريم متخصص لتبييض تحت الإبط وإزالة الروائح. تركيبة لطيفة آمنة لبشرة تحت الإبط الحساسة.",
+      "image": "assets/8.jpeg",
+      "categories": ["under-arm-care"],
+      "features": [
+        "Underarm specialized",
+        "Whitening and deodorizing",
+        "Gentle for sensitive skin",
+        "Safe daily use"
+      ],
+      "featuresAr": [
+        "متخصص لتحت الإبط",
+        "تبييض وإزالة الروائح",
+        "لطيف للبشرة الحساسة",
+        "آمن للاستخدام اليومي"
+      ],
+      "ingredients": "Kojic Acid, Arbutin, Aloe Vera, Tea Tree Oil, Glycerin",
+      "usage": "Apply to clean, dry underarms twice daily. Allow to absorb before dressing.",
+      "usageAr": "يُطبق على تحت الإبط النظيف والجاف مرتين يومياً. اتركه ينتصب قبل ارتداء الملابس."
+    }
+  ]
+}

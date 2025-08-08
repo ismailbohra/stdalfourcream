@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - St. Dalfour Cream - Get in Touch</title>
+    <meta name="description" content="Contact St. Dalfour Cream for inquiries about our skin care products. Get support, ask questions, or learn more about our whitening creams in UAE.">
+    <meta name="keywords" content="contact St. Dalfour, customer support, skin care inquiries, Dubai contact, UAE support">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/logo.webp" alt="ST. DALFOUR" style="height: 40px;">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="verify.html" data-i18n="nav.verify">Verify Products</a></li>
+                            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" data-i18n="breadcrumb.home">Home</a>
+                        <span class="breadcrumb-separator">></span>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span data-i18n="breadcrumb.contact">Contact</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <div class="container">
+                <h1 data-i18n="contact.title">Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+                <div class="contact-form">
+                    <form onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <input type="text" name="fullName" data-i18n-placeholder="contact.fullName" placeholder="Full Name *" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" data-i18n-placeholder="contact.email" placeholder="Email Address *" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select name="country" required>
+                                    <option value="" data-i18n="contact.country">Country *</option>
+                                    <option value="UAE">United Arab Emirates</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="OM">Oman</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" name="mobile" data-i18n-placeholder="contact.mobile" placeholder="Mobile Number *" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" data-i18n-placeholder="contact.message" placeholder="Message *" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                        <li><a href="verify.html" data-i18n="nav.verify">Verify</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
+                    <ul>
+                        <li data-i18n="footer.email">Email: info@stdalfourcream.com</li>
+                        <li data-i18n="footer.sales">Sales: sales@stdalfourcream.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 St. Dalfour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
