@@ -14,15 +14,14 @@ function toggleLanguage() {
 // Product Verification
 async function verifyProduct() {
     const code = document.getElementById('productCode').value.trim().toUpperCase();
-    const resultDiv = document.getElementById('verificationResult');
 
     if (!code) {
-        showResult(window.i18n ? window.i18n.t('verify.error') : 'Please enter a product code', 'error');
+        showVerificationModal('error', 'Verification Failed', 'Please enter a product code to verify.');
         return;
     }
 
-    // Show loading
-    showResult(window.i18n ? window.i18n.t('verify.loading') : 'Verifying product...', 'info');
+    // Show loading modal
+    showVerificationModal('loading', 'Verifying Product', 'Please wait while we verify your product...');
 
     // Verify product code format and range
     const isValid = verifyProductCode(code);
@@ -30,11 +29,12 @@ async function verifyProduct() {
     // Simulate a small delay for better UX
     setTimeout(() => {
         if (isValid) {
-            showResult(window.i18n ? window.i18n.t('verify.success') : '✅ Product is authentic and verified!', 'success');
+            showVerificationModal('success', 'Verification Successful', `✅ Product with code (${code}) is authentic and verified! This is a genuine St. Dalfour product.`);
         } else {
-            showResult(window.i18n ? window.i18n.t('verify.error') : '❌ Product code not found. This may be a counterfeit product.', 'error');
+            const errorMessage = `We were unable to verify the product with code (${code}) in our system. It may be counterfeit. If you need further assistance or clarification, please <a href="contact.html" class="contact-link">contact our support</a>.`;
+            showVerificationModal('error', 'Verification Failed', errorMessage);
         }
-    }, 1000);
+    }, 1500);
 }
 
 // Verify product code logic
@@ -63,12 +63,58 @@ function verifyProductCode(code) {
     return codeNumber >= minCode && codeNumber <= maxCode;
 }
 
-function showResult(message, type) {
-    const resultDiv = document.getElementById('verificationResult');
-    if (resultDiv) {
-        resultDiv.textContent = message;
-        resultDiv.className = 'result-message result-' + type;
-        resultDiv.style.display = 'block';
+// Show verification modal
+function showVerificationModal(type, title, message) {
+    // Remove any existing modal
+    const existingModal = document.querySelector('.verification-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'verification-modal';
+
+    let iconContent = '';
+    let buttonClass = '';
+    let buttonText = 'CLOSE';
+
+    switch (type) {
+        case 'success':
+            iconContent = '✓';
+            buttonClass = 'success';
+            break;
+        case 'error':
+            iconContent = '!';
+            buttonClass = 'error';
+            break;
+        case 'loading':
+            iconContent = '⟳';
+            buttonClass = 'loading';
+            buttonText = '';
+            break;
+    }
+
+    modal.innerHTML = `
+        <div class="verification-modal-content">
+            <button class="verification-modal-close" onclick="closeVerificationModal()">&times;</button>
+            <div class="verification-icon ${type}">
+                ${iconContent}
+            </div>
+            <div class="verification-title">${title}</div>
+            <div class="verification-message ${type}">${message}</div>
+            ${type !== 'loading' ? `<button class="verification-close-btn ${buttonClass}" onclick="closeVerificationModal()">${buttonText}</button>` : ''}
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+}
+
+// Close verification modal
+function closeVerificationModal() {
+    const modal = document.querySelector('.verification-modal');
+    if (modal) {
+        modal.remove();
     }
 }
 
@@ -119,10 +165,7 @@ async function startQRScan() {
                 
                 // Close scanner
                 closeQRScanner();
-                
-                // Show success message
-                alert(`QR Code detected: ${result.data}`);
-                
+
                 // Auto-verify the product
                 verifyProduct();
             },

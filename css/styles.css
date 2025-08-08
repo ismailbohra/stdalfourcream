@@ -642,6 +642,138 @@ body {
     color: #666;
 }
 
+/* Verification Modal */
+.verification-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.verification-modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.verification-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verification-modal-close:hover {
+    color: #666;
+}
+
+.verification-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+.verification-icon.success {
+    background: #28a745;
+}
+
+.verification-icon.error {
+    background: #dc3545;
+}
+
+.verification-icon.loading {
+    background: #007bff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.verification-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.verification-message {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.verification-message.error {
+    color: #dc3545;
+}
+
+.verification-message.success {
+    color: #28a745;
+}
+
+.verification-close-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.verification-close-btn:hover {
+    background: #c82333;
+}
+
+.verification-close-btn.success {
+    background: #28a745;
+}
+
+.verification-close-btn.success:hover {
+    background: #218838;
+}
+
+.contact-link {
+    color: #1e3a8a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #0f2557;
+}
+
 /* RTL Support */
 [dir="rtl"] .nav-container {
     flex-direction: row-reverse;
