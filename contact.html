@@ -20,15 +20,22 @@
                             <img src="assets/logo.webp" alt="ST. DALFOUR" style="height: 40px;">
                         </a>
                     </div>
+
                     <nav>
                         <ul class="nav-menu">
                             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
                             <li><a href="verify.html" data-i18n="nav.verify">Verify Products</a></li>
                             <li><a href="products.html" data-i18n="nav.products">Products</a></li>
                             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                            <li><button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button></li>
                         </ul>
                     </nav>
-                    <button class="language-toggle" onclick="toggleLanguage()" data-i18n="nav.language">العربية</button>
+
+                    <button class="hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>

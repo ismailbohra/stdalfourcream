@@ -11,6 +11,17 @@ function toggleLanguage() {
     }
 }
 
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('mobile-open');
+    }
+}
+
 // Product Verification
 async function verifyProduct() {
     const code = document.getElementById('productCode').value.trim().toUpperCase();

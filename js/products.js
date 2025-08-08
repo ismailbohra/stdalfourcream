@@ -27,6 +27,28 @@ function toggleLanguage() {
     }
 }
 
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('mobile-open');
+    }
+}
+
+// Close mobile menu
+function closeMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('mobile-open');
+    }
+}
+
 // Load and display products
 async function loadProductsPage() {
     if (!productsData) {
@@ -220,4 +242,22 @@ document.addEventListener('DOMContentLoaded', function() {
         window.i18n.updateAllText();
         console.log('i18n initialized, current language:', window.i18n.getCurrentLanguage());
     }
+
+    // Add click listeners to nav links to close mobile menu
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const navContainer = document.querySelector('.nav-container');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navMenu && navMenu.classList.contains('mobile-open')) {
+            if (!navContainer.contains(e.target)) {
+                closeMobileMenu();
+            }
+        }
+    });
 });

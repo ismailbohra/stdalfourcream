@@ -30,6 +30,17 @@ function toggleLanguage() {
     }
 }
 
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('mobile-open');
+    }
+}
+
 // Load and display product details
 async function loadProductDetails() {
     // Get product ID from URL
