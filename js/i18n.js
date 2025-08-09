@@ -70,8 +70,8 @@ class I18n {
                 // Footer
                 'footer.quickLinks': 'Quick Links',
                 'footer.contactUs': 'Contact Us',
-                'footer.email': 'Email: info@stdalfourcream.com',
-                'footer.sales': 'Sales: sales@stdalfourcream.com',
+                'footer.email': 'Email: info@stdalfours.com',
+                'footer.sales': 'Sales: sales@stdalfours.com',
                 'footer.copyright': '© 2025 St. Dalfour. All rights reserved.',
                 
                 // Breadcrumbs
@@ -154,8 +154,8 @@ class I18n {
                 // Footer
                 'footer.quickLinks': 'روابط سريعة',
                 'footer.contactUs': 'اتصل بنا',
-                'footer.email': 'البريد الإلكتروني: info@stdalfourcream.com',
-                'footer.sales': 'المبيعات: sales@stdalfourcream.com',
+                'footer.email': 'البريد الإلكتروني: info@stdalfours.com',
+                'footer.sales': 'المبيعات: sales@stdalfours.com',
                 'footer.copyright': '© 2025 سانت دالفور. جميع الحقوق محفوظة.',
                 
                 // Breadcrumbs
